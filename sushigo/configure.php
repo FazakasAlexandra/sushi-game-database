@@ -1,8 +1,9 @@
 <?PHP
 
-define('server','localhost');
-define('user','root');
-define('password','');
-define('database_name','sushigo')
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header("Access-Control-Allow-Headers: Content-Type");
+
+$db = new mysqli('localhost', 'root', '', 'sushigo');
 
 ?>
