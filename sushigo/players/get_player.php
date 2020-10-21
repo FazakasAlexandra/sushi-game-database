@@ -14,7 +14,7 @@ if (isset($_GET["Name"])) {
             $row = $result->fetch_assoc();
             print json_encode($row);
         } else {
-            print $name . ' is not a player';
+            print json_encode("player not found");
         }
 
         $SQL->close();
